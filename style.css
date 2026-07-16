@@ -1,0 +1,56 @@
+/* ============================================
+   Tokens
+   ============================================ */
+:root {
+  --cream: #fbf6ef;
+  --card: #fffdf9;
+  --ink: #2b1810;
+  --cocoa: #6b4a3a;
+  --raspberry: #8e2a45;
+  --raspberry-dark: #6e1f35;
+  --mustard: #c9962c;
+  --mustard-dark: #a97a1e;
+  --line: #e3d3bc;
+  --line-soft: #efe3d0;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --radius-card: 6px;
+  --radius-pill: 999px;
+  --shadow-card:
+    0 24px 60px -20px rgba(43, 24, 16, 0.35), 0 2px 6px rgba(43, 24, 16, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(201, 150, 44, 0.1),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 90%, rgba(142, 42, 69, 0.1), transparent 45%),
+    var(--cream);
+  font-family: var(--font-body);
+  color: var(--ink);
+  display: flex;
+  justify-content: center;
+  padding: 56px 20px 80px;
+}
