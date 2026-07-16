@@ -521,3 +521,103 @@ body {
     box-shadow: 0 0 0 6px rgba(142, 42, 69, 0);
   }
 }
+/* Footer */
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.footer__note {
+  font-size: 12px;
+  color: var(--cocoa);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 720px) {
+  .card {
+    padding: 34px 22px 26px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero__gauge {
+    border-left: none;
+    border-top: 1px dashed var(--line);
+    padding-left: 0;
+    padding-top: 18px;
+  }
+  .gauge__track {
+    width: 100%;
+    height: 12px;
+  }
+  .gauge__fill {
+    height: 100%;
+    width: calc(var(--progress) * 100%);
+    transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .ingredient__amt {
+    width: 52px;
+    font-size: 12px;
+  }
+  .panel__header {
+    align-items: flex-start;
+  }
+  .cook-controls {
+    width: 100%;
+  }
+  .cook-controls .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .meta-row {
+    gap: 8px;
+  }
+  .meta-pill {
+    padding: 6px 12px;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+}
+
+/* ============================================
+   Print
+   ============================================ */
+@media print {
+  body {
+    padding: 0;
+    background: #fff;
+  }
+  .tape,
+  .hero__gauge,
+  .cook-controls,
+  .timer,
+  #print-recipe {
+    display: none !important;
+  }
+  .card {
+    box-shadow: none;
+    border: none;
+    transform: none;
+    max-width: 100%;
+    animation: none;
+  }
+  .panel__body {
+    grid-template-rows: 1fr !important;
+    opacity: 1 !important;
+    margin-top: 14px !important;
+  }
+  .step,
+  .ingredient {
+    break-inside: avoid;
+  }
+}
