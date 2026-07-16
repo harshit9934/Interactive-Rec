@@ -111,6 +111,69 @@
           </ul>
         </div>
       </section>
+      <section class="panel" id="steps-panel">
+        <div class="panel__header">
+          <h2 class="panel__title">Method</h2>
+          <div class="cook-controls">
+            <button class="btn btn--primary" id="start-cooking">
+              Start Cooking
+            </button>
+            <button class="btn btn--ghost" id="next-step" disabled>
+              Next Step
+            </button>
+          </div>
+        </div>
+
+        <div class="timer" id="timer-display" hidden>
+          <span class="timer__label">Time remaining</span>
+          <span class="timer__value" id="timer-value">45:00</span>
+        </div>
+
+        <ol class="steps" id="steps-list">
+          <li class="step" data-step="1">
+            <span class="step__num">1</span>
+            <p class="step__text">
+              Melt the chocolate and butter together in a heatproof bowl over
+              gently simmering water, stirring until glossy.
+            </p>
+          </li>
+          <li class="step" data-step="2">
+            <span class="step__num">2</span>
+            <p class="step__text">
+              Whisk the brown sugar into the warm chocolate mixture, then beat
+              in the eggs one at a time.
+            </p>
+          </li>
+          <li class="step" data-step="3">
+            <span class="step__num">3</span>
+            <p class="step__text">
+              Sift the flour, cocoa, and baking powder over the batter and fold
+              in gently until just combined.
+            </p>
+          </li>
+          <li class="step" data-step="4">
+            <span class="step__num">4</span>
+            <p class="step__text">
+              Stir in the cooled coffee — the batter will loosen and turn a
+              deep, glossy brown.
+            </p>
+          </li>
+          <li class="step" data-step="5">
+            <span class="step__num">5</span>
+            <p class="step__text">
+              Pour into a lined 20 cm tin and bake at 170°C for 32–35 minutes,
+              until a skewer comes out with a few moist crumbs.
+            </p>
+          </li>
+          <li class="step" data-step="6">
+            <span class="step__num">6</span>
+            <p class="step__text">
+              Cool completely, drip over the dark icing, and finish with a
+              cherry before slicing.
+            </p>
+          </li>
+        </ol>
+      </section>
     </main>
   </body>
 </html>
