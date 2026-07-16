@@ -105,4 +105,19 @@ document.addEventListener("DOMContentLoaded", () => {
       timerValue.textContent = formatTime(remaining);
     }, 1000);
   }
+  /* ---------------------------------------------
+     4. Print recipe
+  --------------------------------------------- */
+  const printBtn = document.getElementById("print-recipe");
+  printBtn.addEventListener("click", () => {
+    // Make sure ingredients are visible in the printed copy
+    if (!ingredientsBody.classList.contains("is-open")) {
+      ingredientsBody.classList.add("is-open");
+      toggleBtn.setAttribute("aria-expanded", "true");
+      toggleLabel.textContent = "Hide Ingredients";
+    }
+    window.print();
+  });
+
+  renderSteps();
 });
