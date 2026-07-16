@@ -37,6 +37,80 @@
           </li>
         </ul>
       </header>
+      <section class="hero">
+        <img
+          src="cake.svg"
+          alt="A slice of layered chocolate cake with dark icing drips and a cherry on top"
+          class="hero__image"
+        />
+        <div class="hero__gauge" aria-hidden="true">
+          <p class="gauge__label">Oven Gauge</p>
+          <div class="gauge__track">
+            <div class="gauge__fill" id="gauge-fill"></div>
+          </div>
+          <p class="gauge__reading" id="gauge-reading">Step 0 of 6</p>
+        </div>
+      </section>
+
+      <section class="panel" id="ingredients-panel">
+        <div class="panel__header">
+          <h2 class="panel__title">Pantry List</h2>
+          <button
+            class="btn btn--ghost"
+            id="toggle-ingredients"
+            aria-expanded="false"
+            aria-controls="ingredients-body"
+          >
+            <span id="toggle-ingredients-label">Show Ingredients</span>
+            <span class="btn__icon" aria-hidden="true">▾</span>
+          </button>
+        </div>
+
+        <div class="panel__body" id="ingredients-body">
+          <ul class="ingredients">
+            <li class="ingredient">
+              <span class="ingredient__amt">200 g</span
+              ><span class="ingredient__name">dark chocolate, chopped</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">180 g</span
+              ><span class="ingredient__name">unsalted butter</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">200 g</span
+              ><span class="ingredient__name">soft light-brown sugar</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">3</span
+              ><span class="ingredient__name"
+                >large eggs, room temperature</span
+              >
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">180 g</span
+              ><span class="ingredient__name">plain flour</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">40 g</span
+              ><span class="ingredient__name">cocoa powder</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">1 tsp</span
+              ><span class="ingredient__name">baking powder</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">120 ml</span
+              ><span class="ingredient__name">strong black coffee, cooled</span>
+            </li>
+            <li class="ingredient">
+              <span class="ingredient__amt">1</span
+              ><span class="ingredient__name"
+                >maraschino cherry, to finish</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

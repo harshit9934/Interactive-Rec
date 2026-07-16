@@ -1,0 +1,53 @@
+<svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a layered chocolate cake slice with dripping icing and a cherry on top">
+  <defs>
+    <linearGradient id="plateShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#F1E6D6"/>
+    </linearGradient>
+    <linearGradient id="cakeLayer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A3327"/>
+      <stop offset="100%" stop-color="#432419"/>
+    </linearGradient>
+    <linearGradient id="icingDrip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B1F17"/>
+      <stop offset="100%" stop-color="#2B1810"/>
+    </linearGradient>
+    <radialGradient id="cherryShine" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#C9455E"/>
+      <stop offset="100%" stop-color="#8E2A45"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="240" cy="360" rx="200" ry="34" fill="url(#plateShade)"/>
+  <ellipse cx="240" cy="356" rx="200" ry="30" fill="none" stroke="#E3D3BC" stroke-width="2"/>
+
+  <!-- cake slice body (triangular wedge, side view stacked) -->
+  <g>
+    <!-- bottom crumb layer -->
+    <path d="M120 330 L360 330 L240 120 Z" fill="url(#cakeLayer)"/>
+    <!-- filling stripe 1 -->
+    <path d="M133 300 L347 300 L338 282 L142 282 Z" fill="#C9962C"/>
+    <!-- filling stripe 2 -->
+    <path d="M165 230 L315 230 L308 214 L172 214 Z" fill="#C9962C"/>
+    <!-- top icing cap with drips -->
+    <path d="M240 108 L360 328 L340 328 C336 300 326 300 320 328 L300 328 C296 296 286 296 282 328 L262 328 C258 302 248 302 244 328 L226 328 C222 298 212 298 208 328 L188 328 C184 300 174 300 170 328 L150 328 C146 300 136 300 132 328 L120 328 Z" fill="url(#icingDrip)"/>
+  </g>
+
+  <!-- cherry -->
+  <circle cx="240" cy="96" r="16" fill="url(#cherryShine)"/>
+  <ellipse cx="234" cy="88" rx="4" ry="6" fill="#F2A9B6" opacity="0.7"/>
+  <path d="M240 80 C 236 60, 250 54, 252 40" fill="none" stroke="#5C7A46" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- sprinkles -->
+  <rect x="150" y="150" width="10" height="3" rx="1.5" fill="#F2E1C4" transform="rotate(20 155 151)"/>
+  <rect x="300" y="170" width="10" height="3" rx="1.5" fill="#C9455E" transform="rotate(-15 305 171)"/>
+  <rect x="200" y="190" width="10" height="3" rx="1.5" fill="#F2E1C4" transform="rotate(40 205 191)"/>
+  <rect x="270" y="250" width="10" height="3" rx="1.5" fill="#C9455E" transform="rotate(-30 275 251)"/>
+  <rect x="180" y="260" width="10" height="3" rx="1.5" fill="#F2E1C4" transform="rotate(10 185 261)"/>
+
+  <!-- fork -->
+  <g transform="translate(370,250) rotate(18)" fill="#9C9691">
+    <rect x="-3" y="0" width="6" height="90" rx="3"/>
+    <path d="M-10 0 L-10 -28 C-10 -34 -6 -34 -6 -28 L-6 -10 L-2 -10 L-2 -30 C-2 -36 2 -36 2 -30 L2 -10 L6 -10 L6 -28 C6 -34 10 -34 10 -28 L10 0 Z"/>
+  </g>
+</svg>
