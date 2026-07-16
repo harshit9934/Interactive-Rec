@@ -43,4 +43,30 @@ document.addEventListener("DOMContentLoaded", () => {
       nextBtn.textContent = "Next Step";
     }
   }
+
+  /* ---------------------------------------------
+   Step navigation and scrolling
+--------------------------------------------- */
+  function scrollStepIntoView() {
+    const active = document.querySelector(".step.is-active");
+    if (active) active.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  startBtn.addEventListener("click", () => {
+    currentStep = 1;
+    startBtn.textContent = "Cooking Started";
+    startBtn.disabled = true;
+    nextBtn.disabled = false;
+    renderSteps();
+    scrollStepIntoView();
+    startTimer();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentStep < totalSteps) {
+      currentStep += 1;
+      renderSteps();
+      scrollStepIntoView();
+    }
+  });
 });
